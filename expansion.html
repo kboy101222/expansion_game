@@ -1,0 +1,47 @@
+<!DOCTYPE>
+
+<html>
+  <header>
+    <script type='text/javascript'  src='js\bootstrap.js'></script>
+    <script type='text/javascript'  src='js\jquery.js'></script>
+    <script type='text/javascript' src='main.js'></script>
+    <script type='text/javascript' src='js\expansion.js'></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='css\bootstrap.css' />
+    <!-- <link rel='stylesheet' href='css\main.css' /> -->
+    <link rel='stylesheet' href='css\expansion.css' />
+    <title>Expansion</title>
+  </header>
+
+  <body>
+    <div class="fullGameZone">
+    	<h3 class="expansionHeader">Expansion</h3>
+    	<h5>A simple money management game by kboy101222</h5>
+    	<h5><b><i>CAUTION!</i></b> This game is in EXTREMELY early alpha!</h5>
+    	<div class="gameZone">
+    		<p>Let's get started -></p>
+    		<p class="diffSel">Starting Difficulty: <span>
+    			<select class="startDiff">
+    				<option val="easy">Well Off (easy/ +0$ per turn)</option>
+    				<option val="med">Jobless (medium/ -10$ per turn)</option>
+    				<option val="hard">Homeless (hard/ 0$ starting cash)</option>
+    			</select>
+    			<span>
+            <button class="buttonCurved" id="startGame">Start the Game</button>
+          </span>
+    		</span></p>
+    		<p>Current Cash: <span class='cash'>0</span><span class="currencySymbol">$</span></p>
+    		<p>Income per turn: <span class='income'>0</span><span class="currencySymbol">$</span></p>
+        <p>Career Path: <span class='carPath'>n/a</span></p>
+        <p>Job Title:<span class='jobTitle'>n/a</span></p>
+        <span>
+    		  <button id="nextTurn" class="startHidden">Next Turn</button>
+          <button class="startHidden" id="findJob">Find a Job</button>
+          <button class="startHidden" id="goShopping">Go Shopping</button>
+        </span>
+    		<p class="startHidden">Log:</p>
+    		<textarea class="startHidden" id="log"></textarea>
+    	</div>
+    </div>
+  </body>
+</html>

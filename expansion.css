@@ -1,0 +1,12 @@
+.buttonCurved {
+	border-radius: 10px;
+}
+
+#log {
+	height: 200px;
+	width: 500px
+}
+
+.fullGameZone {
+	margin-left: 10px;
+}
