@@ -3,6 +3,8 @@ var income;
 var cash;
 var job = null;
 
+console.log("Hello World");
+
 var gameData = {
   careerList: {
     medical: {
@@ -24,7 +26,7 @@ var gameData = {
         frontenddev: {
           jobTitle: "Front End Developer",
           income: 50
-        }
+        },
         serverop: {
           jobTitle: "Server Operator",
           income: 60
@@ -36,6 +38,10 @@ var gameData = {
 
 function logMsg(m) { //Easier way to log messages
   $('#log').val( m + "\n" + $('#log').val());
+}
+
+function findJob() {
+  var jobNum = gameData.careerList.length;
 }
 
 function updateCash() { //Updates the player's cash total
@@ -53,6 +59,15 @@ function updateCash() { //Updates the player's cash total
     cash += income;
     $('.cash').text(String(cash));
   }
+}
+
+function updateCashText(){
+  $('.cash').text(String(cash));
+}
+
+function addCash(amt){
+  cash += amt;
+  updateCashText();
 }
 
 function notImple() { //For stuff I haven't done yet
@@ -91,6 +106,7 @@ $(document).ready(function() { //Primary Loop
   });
 
   $('#findJob').click(function() {
+    //addCash(10);
     notImple();
   })
 
